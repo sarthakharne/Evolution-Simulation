@@ -1,0 +1,25 @@
+{
+    "in_channels": 2,
+    "out_channels": 64,
+    "hidden_channels": [8, 16],
+    "hidden_dims": [24],
+    "num_actions": 4,
+
+    "policy_step_size": 1e-4,
+    "batch_size": 64,
+    "discount_factor": 0.95,
+    "capacity": 10000,
+    "device": "cuda",
+    "log_std_min": -2,
+    "log_std_max": 20,
+    "eps_start": 0.95,
+    "eps_end": 0.05,
+    "eps_decay": 40000,
+    "tau": 1e-4,
+    "grad_clip": 100000,
+    "max_stamina": 500,
+    "max_x": 40,
+    "max_y": 40,
+    "flatten": "False",
+    "vision_size" : 6
+}
